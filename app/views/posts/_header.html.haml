@@ -1,0 +1,33 @@
+.header
+  .header__navbarTop
+    = link_to "#", class: "header__navbarTop--siteLogo" do
+      = icon('fas', 'school', class: "siteLogo__btn--icon")
+      %p EduNote
+    .header__navbarTop--navItem
+      .navItem__search
+        = icon('fas', 'search-minus', class: "navItem__search--icon")
+      = link_to "#", class: "navItem__user" do
+        = icon('far', 'user-circle',class: "navItem__user--icon")
+      = link_to "#", class: "navItem__post" do
+        .post__sendBtn
+          = icon('fas', 'edit', class: "post__sendBtn--icon")
+          %p 投稿
+        
+  .header__navbarMenu
+    .header__navbarMenu--menu
+      = link_to "/", class: "menu__home" do
+        .navItem
+          .navItem__home
+            ホーム
+      = link_to "/", class: "menu__circle" do
+        .navItem
+          .navItem__circle
+            サークル
+      = link_to "/", class: "menu__tag" do
+        .navItem
+          .navItem__tag
+            人気タグ
+      = link_to "/", class: "menu__how-to-use" do
+        .navItem
+          .navItem__how-to-use
+            使い方
